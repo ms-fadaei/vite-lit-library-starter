@@ -17,9 +17,9 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs'],
       fileName: (format) => {
-        if (format === 'es') return `validator.mjs`;
-        if (format === 'cjs') return `validator.cjs`;
-        return `validator.${format}.js`;
+        if (format === 'es') return `video-player-element.mjs`;
+        if (format === 'cjs') return `video-player-element.cjs`;
+        return `video-player-element.${format}.js`;
       },
     },
   },
