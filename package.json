@@ -1,0 +1,61 @@
+{
+  "name": "video-player-element",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "upjs/video-player-element",
+  "homepage": "https://github.com/upjs/video-player-element",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "player",
+    "custom-element"
+  ],
+  "main": "./dist/video-player-element.umd.js",
+  "module": "./dist/video-player-element.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/video-player-element.es.js",
+      "require": "./dist/video-player-element.umd.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite --config ./playground/vite.config.ts",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
+    "coverage": "vitest run --coverage",
+    "prepare": "husky install",
+    "release": "yarn test && npx standard-version && git push --follow-tags && npm publish"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix",
+    "*": "prettier -w -u"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": ">=6",
+    "jsdom": "^19.0.0",
+    "lint-staged": ">=10",
+    "path": "^0.12.7",
+    "prettier": "^2.5.1",
+    "standard-version": "^9.3.2",
+    "ts-lit-plugin": "^1.2.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vitest": "^0.3.5"
+  },
+  "dependencies": {
+    "lit": "^2.2.0"
+  }
+}
