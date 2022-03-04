@@ -2,6 +2,13 @@
 
 > WIP
 
+## TODO
+- [x] typescript
+- [x] lit-element
+- [x] vite
+- [ ] vitest
+- [x] eslint
+
 ## License
 
 [MIT License](./LICENSE)
