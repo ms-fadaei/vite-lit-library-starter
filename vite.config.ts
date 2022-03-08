@@ -21,6 +21,7 @@ export default defineConfig({
     },
   },
   test: {
-    // include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']
+    globals: true,
+    environment: 'happy-dom',
   },
 });
