@@ -1,21 +1,24 @@
 {
-  "name": "video-player-element",
+  "name": "vite-lit-library-starter",
   "version": "0.0.0",
-  "description": "",
-  "repository": "upjs/video-player-element",
-  "homepage": "https://github.com/upjs/video-player-element",
+  "description": "WIP",
+  "repository": "ms-fadaei/vite-lit-library-starter",
+  "homepage": "https://github.com/ms-fadaei/vite-lit-library-starter",
   "license": "MIT",
   "keywords": [
-    "video",
-    "player",
-    "custom-element"
+    "vite",
+    "lit",
+    "library",
+    "starter-template",
+    "boilerplate",
+    "typescript"
   ],
-  "main": "./dist/video-player-element.umd.js",
-  "module": "./dist/video-player-element.es.js",
+  "main": "./dist/elements.cjs",
+  "module": "./dist/elements.mjs",
   "exports": {
     ".": {
-      "import": "./dist/video-player-element.es.js",
-      "require": "./dist/video-player-element.umd.js"
+      "import": "./dist/elements.mjs",
+      "require": "./dist/elements.cjs"
     }
   },
   "files": [

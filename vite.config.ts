@@ -14,9 +14,9 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs'],
       fileName: (format) => {
-        if (format === 'es') return `video-player-element.mjs`;
-        if (format === 'cjs') return `video-player-element.cjs`;
-        return `video-player-element.${format}.js`;
+        if (format === 'es') return `elements.mjs`;
+        if (format === 'cjs') return `elements.cjs`;
+        return `elements.${format}.js`;
       },
     },
   },
