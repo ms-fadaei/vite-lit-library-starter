@@ -6,7 +6,7 @@
 - [x] typescript
 - [x] lit-element
 - [x] vite
-- [ ] vitest
+- [x] vitest
 - [x] eslint
 
 ## License
