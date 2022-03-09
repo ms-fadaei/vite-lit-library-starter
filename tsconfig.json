@@ -3,6 +3,7 @@
     "target": "es2019",
     "module": "es2020",
     "lib": ["es2020", "DOM", "DOM.Iterable"],
+    "types": ["vitest/globals"],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -31,5 +32,5 @@
       "@/*": ["./playground/*"]
     }
   },
-  "include": ["src", "playground", "env.d.ts", "tests"]
+  "include": ["src", "playground", "tests"]
 }
