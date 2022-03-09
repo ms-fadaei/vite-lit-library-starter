@@ -1,22 +1,25 @@
 import type { IWindow } from 'happy-dom';
 import { beforeEach, describe, it, vi, expect } from 'vitest';
 import '~/elements/my-element';
-import { nextTick } from '../utils';
 
 describe('Button with increment', async () => {
   beforeEach(async () => {
     document.body.innerHTML = '<my-element name="World"></my-element>';
     await (window as unknown as IWindow).happyDOM.whenAsyncComplete();
-    await nextTick();
+    await requestUpdate();
   });
 
   function getInsideButton(): HTMLElement | null | undefined {
     return document.body.querySelector('my-element')?.shadowRoot?.querySelector('button');
   }
 
+  function requestUpdate() {
+    return document.body.querySelector('my-element')?.requestUpdate();
+  }
+
   it('should increment the count on each click', async () => {
     getInsideButton()?.click();
-    await nextTick();
+    await requestUpdate();
     expect(getInsideButton()?.innerText).toContain('1');
   });
 
