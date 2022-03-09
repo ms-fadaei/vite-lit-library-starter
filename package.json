@@ -27,7 +27,7 @@
   ],
   "scripts": {
     "dev": "vite --config ./playground/vite.config.ts",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "test": "vitest --run",

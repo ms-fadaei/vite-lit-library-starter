@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   publicDir: false,
